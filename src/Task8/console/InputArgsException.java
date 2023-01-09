@@ -26,4 +26,3 @@ public class InputArgsException extends Exception {
         return message;
     }
 }
-}

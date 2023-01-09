@@ -330,14 +330,27 @@ public class ArrayUtils {
         return lines.toArray(new String[0]);
     }
 
+    public static String getStringFromIntArray2(int[][] arr) {
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (int[] row : arr) {
+            for (int val : row) {
+                stringBuilder.append(val);
+                stringBuilder.append('\t');
+            }
+            stringBuilder.append('\n');
+        }
+        return stringBuilder.toString();
+    }
+
     /**
      * Чтение двухмерного массива int[][] с консоли;
      * checkMatrix - задает режим, при котором,
      * если строки содержат разное кол-во элементот, то
      * это считается ошибкой и предлагается повторить ввод
      */
-    public static int[][] getIntArray2FromString(String s, boolean checkMatrix) throws Exception{
-        int[][] arr2 = toIntArray2(s.split("\n"));
+    public static int[][] getIntArray2FromString(String[] lines, boolean checkMatrix) throws Exception{
+        int[][] arr2 = toIntArray2(lines);
         if (checkMatrix) {
             for (int i = 1; i < arr2.length; i++)
                 if (arr2[i].length != arr2[0].length) {

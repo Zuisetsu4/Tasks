@@ -11,13 +11,19 @@ public class Sort {
     }
 
     public static void sort (int[][] arr, int rowIndex) {
-        for (int i = 0; i < arr.length - 1; i++) {
+        if (arr.length == 0) {
+            return;
+        }
+
+        for (int i = 0; i < arr[0].length - 1; i++) {
             int minIndex = i;
-            for(int j = i + 1; j < arr.length; j++){
-                if (arr[rowIndex][i] > arr[rowIndex][j]) {
-                minIndex = j;
+
+            for(int j = i + 1; j < arr[0].length; j++) {
+                if (arr[rowIndex][minIndex] > arr[rowIndex][j]) {
+                    minIndex = j;
                 }
             }
+
             if (minIndex != i) {
                 swapColumns(arr, i, minIndex);
             }

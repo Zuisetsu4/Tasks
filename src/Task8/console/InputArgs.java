@@ -20,10 +20,10 @@ public class InputArgs {
         int i = 0;
         while (i < args.length) {
             if (args[i].startsWith("--")) {
-                if (args[i].startsWith("--input_file=")) {
+                if (args[i].startsWith("--input-file=")) {
                     inFile = args[i].split("=")[1];
                 }
-                else if (args[i].startsWith("--output_file=")) {
+                else if (args[i].startsWith("--output-file=")) {
                     outFile = args[i].split("=")[1];
                 }
             }

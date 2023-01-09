@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Task8.FrameMain">
+  <grid id="27dc6" binding="panelM" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="220" y="41" width="1136" height="671"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="e1323" class="javax.swing.JTable" binding="Table">
+        <constraints>
+          <grid row="0" column="0" row-span="4" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="dcb0" class="javax.swing.JButton" binding="addStringsButton" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="AddStrings"/>
+        </properties>
+      </component>
+      <component id="28220" class="javax.swing.JButton" binding="addColumnsButton" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="AddColumns"/>
+        </properties>
+      </component>
+      <component id="4bbb8" class="javax.swing.JButton" binding="removeColumnsButton" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="RemoveColumns"/>
+        </properties>
+      </component>
+      <component id="e6366" class="javax.swing.JButton" binding="removeStringsButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="RemoveStrings"/>
+        </properties>
+      </component>
+      <component id="6ea0b" class="javax.swing.JButton" binding="SortButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="3" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Sort"/>
+        </properties>
+      </component>
+      <component id="7b386" class="javax.swing.JButton" binding="saveArrayButton" default-binding="true">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="SaveArray"/>
+        </properties>
+      </component>
+      <component id="8dde" class="javax.swing.JButton" binding="loadArrayButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="LoadArray"/>
+        </properties>
+      </component>
+      <component id="edb2d" class="javax.swing.JTextField" binding="textField">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+    </children>
+  </grid>
+</form>

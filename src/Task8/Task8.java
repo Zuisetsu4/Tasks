@@ -9,7 +9,7 @@ public class Task8 {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new FrameMain().setVisible(true);
+                new FrameMain(args).setVisible(true);
             }
         });
     }

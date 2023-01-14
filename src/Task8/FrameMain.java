@@ -1,8 +1,5 @@
 package Task8;
 
-import Task8.FileWork.FileReader;
-
-import Task8.console.InputArgs;
 import util.ArrayUtils;
 import util.JTableUtils;
 import util.SwingUtils;
@@ -45,10 +42,10 @@ public class FrameMain extends JFrame {
 
         sortButton.addActionListener(e -> {
             try {
-                InputArgs cmdArgs = InputArgs.fromCmdArgs(args);
                 int[][] data = JTableUtils.readIntMatrixFromJTable(table1);
-                int rowIndex = Integer.parseInt(FileReader.readLineFromFile(cmdArgs.inFile, 0));
+                int rowIndex = data[0][0];
                 Sort.sort(data, rowIndex);
+                data[0] = new int[]{rowIndex};
                 JTableUtils.writeArrayToJTable(table2, data);
             } catch (Exception err) {
                 SwingUtils.showErrorMessageBox(err);
